@@ -1,4 +1,4 @@
-![Blackhole showcase](blackhole.gif)  
+![Blackhole showcase](blackhole.gif)
 
 This program renders a physically motivated picture of what a camera would see near a non‑spinning (Schwarzschild) black hole by following light itself rather than drawing polygons. For each pixel, we imagine a single photon leaving the camera and ask General Relativity where that photon would go. The shader converts the camera’s view ray into an initial four‑momentum in Schwarzschild coordinates and then integrates the null geodesic, the photon’s path in curved spacetime, forward using a fourth‑order Runge–Kutta scheme. The curvature enters through the Schwarzschild lapse α(r)=1−2M/r and its radial derivative; together with the usual Christoffel symbols they tell us how the time, radius, polar and azimuthal components of the photon’s momentum change along the way.
 
